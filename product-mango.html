@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DRIPD Mango Cold-Pressed Organic Syrup - Tropical, rich, and smooth. Perfect for ice cream, cocktails, and desserts.">
+    <meta name="keywords" content="mango syrup, cold pressed syrup, organic syrup, tropical syrup">
+    <title>Mango Cold-Pressed Syrup - DRIPD</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <a href="index.html" class="nav__logo-link">DRIPD</a>
+                </div>
+                
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">ABOUT</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="products.html" class="nav__link nav__link--active">PRODUCTS</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Product Detail Section -->
+        <section class="product-detail">
+            <div class="product-detail__container">
+                <div class="product-detail__content">
+                    <!-- Product Images -->
+                    <div class="product-detail__images">
+                        <div class="product-detail__main-image">
+                            <img src="attached_assets/Mango_1749549254342.png" alt="DRIPD Mango Cold-Pressed Organic Syrup" class="product-detail__bottle" id="main-product-image">
+                            <button class="ingredients-btn" id="ingredientsBtn">
+                                <span>🌱</span>
+                                View Ingredients
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Info -->
+                    <div class="product-detail__info">
+                        <div class="product-detail__badge">Bestseller</div>
+                        <h1 class="product-detail__title">Mango Cold-Pressed Syrup</h1>
+                        <p class="product-detail__description">Tropical. Rich. Smooth.</p>
+                        
+                        <div class="product-detail__price">
+                            <span class="product-detail__price-current">£12.99</span>
+                            <span class="product-detail__price-original">£15.99</span>
+                        </div>
+                        
+                        <div class="product-detail__volume">200ml Bottle</div>
+                        
+                        <div class="product-detail__features">
+                            <h3>Product Features</h3>
+                            <ul>
+                                <li>100% Cold-Pressed Organic Mango</li>
+                                <li>No artificial flavors or preservatives</li>
+                                <li>Perfect for ice cream, cocktails & desserts</li>
+                                <li>Rich tropical flavor profile</li>
+                                <li>Premium squeeze bottle for easy dispensing</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="product-detail__quantity">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn quantity-btn--minus" onclick="changeQuantity(-1)">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10" readonly>
+                                <button class="quantity-btn quantity-btn--plus" onclick="changeQuantity(1)">+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-detail__actions">
+                            <button class="btn btn--primary btn--large" onclick="addToCart()">Add to Cart - £<span id="total-price">12.99</span></button>
+                            <button class="btn btn--secondary btn--large" onclick="buyNow()">Buy Now</button>
+                        </div>
+                        
+                        <div class="product-detail__shipping">
+                            <p><strong>Free shipping</strong> on orders over $25</p>
+                            <p>Estimated delivery: 3-5 business days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usage Ideas Section -->
+        <section class="usage-ideas">
+            <div class="usage-ideas__container">
+                <h2 class="usage-ideas__title">How to Enjoy Your Mango Syrup</h2>
+                <div class="usage-ideas__grid">
+                    <div class="usage-idea">
+                        <div class="usage-idea__icon">🍦</div>
+                        <h3>Ice Cream</h3>
+                        <p>Drizzle over vanilla ice cream for a tropical twist</p>
+                    </div>
+                    <div class="usage-idea">
+                        <div class="usage-idea__icon">🍹</div>
+                        <h3>Cocktails</h3>
+                        <p>Mix into cocktails for authentic mango flavor</p>
+                    </div>
+                    <div class="usage-idea">
+                        <div class="usage-idea__icon">🥞</div>
+                        <h3>Breakfast</h3>
+                        <p>Top pancakes and waffles for a gourmet touch</p>
+                    </div>
+                    <div class="usage-idea">
+                        <div class="usage-idea__icon">🍰</div>
+                        <h3>Desserts</h3>
+                        <p>Use as a cake filling or cheesecake topping</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="related-products">
+            <div class="related-products__container">
+                <h2 class="related-products__title">You Might Also Like</h2>
+                <div class="related-products__grid">
+                    <div class="related-product">
+                        <div class="related-product__image">
+                            <img src="attached_assets/strawberry_1749549254343.png" alt="DRIPD Strawberry Syrup">
+                        </div>
+                        <h3>Strawberry</h3>
+                        <p>£12.99</p>
+                        <a href="products.html" class="btn btn--secondary">View Product</a>
+                    </div>
+                    <div class="related-product">
+                        <div class="related-product__image">
+                            <img src="assets/bottles/passionfruit-bottle.png" alt="DRIPD Passionfruit Syrup">
+                        </div>
+                        <h3>Passionfruit</h3>
+                        <p>£14.99</p>
+                        <a href="products.html" class="btn btn--secondary">View Product</a>
+                    </div>
+                    <div class="related-product">
+                        <div class="related-product__image">
+                            <img src="assets/bottles/pineapple-bottle.png" alt="DRIPD Pineapple Syrup">
+                        </div>
+                        <h3>Pineapple</h3>
+                        <p>£13.99</p>
+                        <a href="products.html" class="btn btn--secondary">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ingredients Popup -->
+    <div class="ingredients-popup" id="ingredientsPopup">
+        <div class="ingredients-popup__overlay" id="ingredientsOverlay"></div>
+        <div class="ingredients-popup__content">
+            <button class="ingredients-popup__close" id="ingredientsClose">&times;</button>
+            <h3>Mango Syrup Ingredients</h3>
+            <div class="ingredients-breakdown">
+                <div class="ingredient-item" data-delay="0">
+                    <div class="ingredient-icon">🥭</div>
+                    <div class="ingredient-info">
+                        <strong>Organic Mango Juice</strong>
+                        <span>85% - Pure cold-pressed mango</span>
+                    </div>
+                </div>
+                <div class="ingredient-item" data-delay="200">
+                    <div class="ingredient-icon">🍯</div>
+                    <div class="ingredient-info">
+                        <strong>Organic Agave Nectar</strong>
+                        <span>12% - Natural sweetener</span>
+                    </div>
+                </div>
+                <div class="ingredient-item" data-delay="400">
+                    <div class="ingredient-icon">🍋</div>
+                    <div class="ingredient-info">
+                        <strong>Citric Acid</strong>
+                        <span>2% - Natural preservation</span>
+                    </div>
+                </div>
+                <div class="ingredient-item" data-delay="600">
+                    <div class="ingredient-icon">💧</div>
+                    <div class="ingredient-info">
+                        <strong>Purified Water</strong>
+                        <span>1% - For consistency</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nutrition-facts">
+                <h4>Nutrition per 30ml serving:</h4>
+                <p>Calories: 45 | Sugar: 11g | Vitamin C: 15% DV</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Product page specific JavaScript
+        function changeQuantity(change) {
+            const quantityInput = document.getElementById('quantity');
+            const currentQuantity = parseInt(quantityInput.value);
+            const newQuantity = Math.max(1, Math.min(10, currentQuantity + change));
+            
+            quantityInput.value = newQuantity;
+            updateTotalPrice();
+        }
+
+        function updateTotalPrice() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const basePrice = 12.99;
+            const totalPrice = (basePrice * quantity).toFixed(2);
+            document.getElementById('total-price').textContent = totalPrice;
+        }
+
+        function addToCart() {
+            const quantity = document.getElementById('quantity').value;
+            const totalPrice = document.getElementById('total-price').textContent;
+            
+            // Simulate adding to cart
+            alert(`Added ${quantity} Mango Syrup(s) to cart - Total: £${totalPrice}`);
+            
+            // In a real application, this would make an API call to add the item to the cart
+            console.log('Added to cart:', {
+                product: 'Mango Cold-Pressed Syrup',
+                quantity: quantity,
+                price: totalPrice
+            });
+        }
+
+        function buyNow() {
+            const quantity = document.getElementById('quantity').value;
+            const totalPrice = document.getElementById('total-price').textContent;
+            
+            // Simulate checkout process
+            alert(`Proceeding to checkout with ${quantity} Mango Syrup(s) - Total: £${totalPrice}`);
+            
+            // In a real application, this would redirect to a checkout page
+            console.log('Buy now:', {
+                product: 'Mango Cold-Pressed Syrup',
+                quantity: quantity,
+                price: totalPrice
+            });
+        }
+    </script>
+</body>
+</html>

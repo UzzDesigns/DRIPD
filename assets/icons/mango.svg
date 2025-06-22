@@ -1,0 +1,27 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="mangoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffd54f;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#fcb901;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f57f17;stop-opacity:1" />
+        </linearGradient>
+        <radialGradient id="mangoHighlight" cx="30%" cy="20%" r="40%">
+            <stop offset="0%" style="stop-color:#fff9c4;stop-opacity:0.8" />
+            <stop offset="100%" style="stop-color:#fff9c4;stop-opacity:0" />
+        </radialGradient>
+    </defs>
+    
+    <!-- Mango body -->
+    <path d="M30 12 C40 12 46 20 46 30 C46 40 42 46 36 48 C32 50 28 50 24 48 C18 46 14 40 14 30 
+             C14 20 20 12 30 12 Z" 
+          fill="url(#mangoGradient)" stroke="none"/>
+    
+    <!-- Highlight -->
+    <ellipse cx="30" cy="25" rx="8" ry="12" fill="url(#mangoHighlight)"/>
+    
+    <!-- Mango texture lines -->
+    <path d="M20 20 Q25 25 20 30" stroke="#f57f17" stroke-width="0.5" fill="none" opacity="0.6"/>
+    <path d="M24 18 Q29 23 24 28" stroke="#f57f17" stroke-width="0.5" fill="none" opacity="0.6"/>
+    <path d="M36 22 Q41 27 36 32" stroke="#f57f17" stroke-width="0.5" fill="none" opacity="0.6"/>
+    <path d="M40 26 Q45 31 40 36" stroke="#f57f17" stroke-width="0.5" fill="none" opacity="0.6"/>
+</svg>

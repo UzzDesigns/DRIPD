@@ -1,0 +1,37 @@
+<svg width="200" height="350" viewBox="0 0 200 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bottle Cap -->
+  <ellipse cx="100" cy="25" rx="25" ry="12" fill="#f8f8f8"/>
+  <rect x="75" y="13" width="50" height="24" rx="12" fill="#f8f8f8"/>
+  
+  <!-- Nozzle -->
+  <rect x="88" y="37" width="24" height="15" rx="12" fill="#f8f8f8"/>
+  
+  <!-- Main Bottle Body -->
+  <path d="M 60 52 Q 60 48 64 48 L 136 48 Q 140 48 140 52 L 140 300 Q 140 320 120 320 L 80 320 Q 60 320 60 300 Z" fill="#ff6600"/>
+  
+  <!-- Bottle Highlights -->
+  <path d="M 65 55 Q 65 52 68 52 L 75 52 Q 78 52 78 55 L 78 295 Q 78 310 70 310 Q 65 310 65 295 Z" fill="rgba(255,255,255,0.3)" opacity="0.7"/>
+  
+  <!-- DRIPD Logo -->
+  <text x="100" y="120" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="800" fill="white" text-anchor="middle">DRIPD</text>
+  
+  <!-- Flavor Label -->
+  <text x="100" y="150" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">ORANGE</text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="175" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="white" text-anchor="middle">COLD PRESSED</text>
+  <text x="100" y="190" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="white" text-anchor="middle">ORGANIC SYRUP</text>
+  
+  <!-- Usage Icons -->
+  <g transform="translate(60, 220)" stroke="white" fill="white">
+    <circle cx="15" cy="15" r="8" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M 15 7 L 15 23" stroke="white" stroke-width="1.5"/>
+    <path d="M 40 8 L 50 8 L 45 18 L 45 22" stroke="white" stroke-width="1.5" fill="none"/>
+    <circle cx="45" cy="25" r="2" fill="white"/>
+    <rect x="65" y="18" width="15" height="8" rx="2" fill="none" stroke="white" stroke-width="1.5"/>
+    <path d="M 67 18 Q 72.5 12 78 18" stroke="white" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Volume -->
+  <text x="100" y="280" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">200 ml</text>
+</svg>

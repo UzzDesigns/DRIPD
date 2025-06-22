@@ -1,0 +1,60 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="lemonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fff9c4;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#fff200;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#fdd835;stop-opacity:1" />
+        </linearGradient>
+        <radialGradient id="lemonHighlight" cx="30%" cy="25%" r="35%">
+            <stop offset="0%" style="stop-color:#fffde7;stop-opacity:0.9" />
+            <stop offset="100%" style="stop-color:#fffde7;stop-opacity:0" />
+        </radialGradient>
+    </defs>
+    
+    <!-- Lemon body -->
+    <ellipse cx="30" cy="30" rx="11" ry="16" fill="url(#lemonGradient)"/>
+    
+    <!-- Lemon tip -->
+    <ellipse cx="30" cy="46" rx="3" ry="4" fill="#fdd835"/>
+    
+    <!-- Highlight -->
+    <ellipse cx="28" cy="24" rx="5" ry="8" fill="url(#lemonHighlight)"/>
+    
+    <!-- Lemon texture -->
+    <g fill="#fdd835" opacity="0.4">
+        <circle cx="24" cy="22" r="0.8"/>
+        <circle cx="28" cy="20" r="0.6"/>
+        <circle cx="32" cy="21" r="0.7"/>
+        <circle cx="36" cy="24" r="0.8"/>
+        
+        <circle cx="22" cy="27" r="0.6"/>
+        <circle cx="26" cy="26" r="0.8"/>
+        <circle cx="30" cy="25" r="0.5"/>
+        <circle cx="34" cy="27" r="0.7"/>
+        <circle cx="38" cy="29" r="0.6"/>
+        
+        <circle cx="23" cy="32" r="0.7"/>
+        <circle cx="27" cy="31" r="0.6"/>
+        <circle cx="31" cy="30" r="0.8"/>
+        <circle cx="35" cy="32" r="0.6"/>
+        <circle cx="37" cy="35" r="0.7"/>
+        
+        <circle cx="24" cy="37" r="0.6"/>
+        <circle cx="28" cy="36" r="0.7"/>
+        <circle cx="32" cy="35" r="0.6"/>
+        <circle cx="36" cy="38" r="0.8"/>
+        
+        <circle cx="26" cy="42" r="0.7"/>
+        <circle cx="30" cy="41" r="0.6"/>
+        <circle cx="34" cy="43" r="0.7"/>
+    </g>
+    
+    <!-- Vertical lines -->
+    <g stroke="#fdd835" stroke-width="0.5" fill="none" opacity="0.6">
+        <path d="M22 18 Q24 30 22 42"/>
+        <path d="M26 16 Q28 30 26 44"/>
+        <path d="M30 14 Q30 30 30 46"/>
+        <path d="M34 16 Q32 30 34 44"/>
+        <path d="M38 18 Q36 30 38 42"/>
+    </g>
+</svg>
